@@ -334,18 +334,20 @@
             <h3>MindMate</h3>
             <p>
               An AI-powered mental health companion with journaling, mood tracking, therapy
-              support, evidence-based advice via RAG, and crisis guardrails. A
-              <strong>LangGraph state machine</strong> detects intent and routes each message to the right
-              tool; moods are passively detected from conversation, journals are auto-analyzed
-              for themes and sentiment, and responses cite uploaded mental health literature
-              page by page.
+              support, evidence-based advice via RAG, and crisis guardrails. Every message runs
+              through a <strong>LangGraph state machine</strong>: load history, detect intent, run a
+              non-negotiable <strong>crisis check</strong> (escalating to 988 and international hotlines
+              before anything else), then route to the right tool. Moods are passively detected
+              from conversation, journals are auto-analyzed for themes and sentiment, and advice
+              answers cite uploaded mental health literature page by page over <strong>SSE streaming</strong>.
             </p>
             <p>
-              Total running cost: <strong>$0</strong>, built on the Groq free tier, local embeddings,
-              SQLite, and ChromaDB.
+              Full-stack build: <strong>Next.js 16 + React 19</strong> frontend, <strong>FastAPI</strong> backend,
+              <strong>Groq (Llama 3.3 70B)</strong> with local BGE embeddings via fastembed, SQLite and
+              ChromaDB, GitHub Actions CI, and Docker Compose. Total running cost: <strong>$0</strong>.
             </p>
             <div class="tags">
-              <span>LangGraph</span><span>LangChain</span><span>TypeScript</span><span>Python</span><span>RAG</span><span>ChromaDB</span>
+              <span>LangGraph</span><span>FastAPI</span><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Groq</span><span>ChromaDB</span><span>RAG</span>
             </div>
             <div class="project-links">
               <a class="btn btn-small" href="https://github.com/visakhpadmanabhan7/MindMate" target="_blank" rel="noopener">View on GitHub →</a>
@@ -354,8 +356,9 @@
           <div class="project-feature-visual" aria-hidden="true">
             <div class="terminal">
               <div class="terminal-bar"><span></span><span></span><span></span></div>
-              <pre><code><span class="t-dim">// LangGraph intent routing</span>
-<span class="t-key">user</span> → <span class="t-fn">detectIntent()</span>
+              <pre><code><span class="t-dim">// LangGraph pipeline, every message</span>
+<span class="t-key">user</span> → <span class="t-fn">loadHistory()</span> → <span class="t-fn">detectIntent()</span>
+  ├─ crisis?   → <span class="t-fn">hotlineResources()</span> <span class="t-dim">first, always</span>
   ├─ mood      → <span class="t-fn">trackMood()</span>
   ├─ journal   → <span class="t-fn">analyzeEntry()</span>
   ├─ therapy   → <span class="t-fn">sessionNotes()</span>

@@ -488,6 +488,17 @@ section { padding: 96px 0; }
 }
 .fact-card:hover { transform: translateY(-3px); border-color: var(--accent); }
 
+.fact-wide { grid-column: 1 / -1; }
+
+.hobbies-title {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+.hobby-tags span { font-size: 0.8rem; padding: 5px 12px; }
+
 .fact-value {
   font-family: var(--font-head);
   font-size: 1.9rem;

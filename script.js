@@ -33,37 +33,13 @@ links.querySelectorAll("a").forEach((a) =>
   })
 );
 
-// ===================== Theme switcher =====================
-const themeBtn = document.querySelector(".theme-btn");
-const themeMenu = document.querySelector(".theme-menu");
-
-function markActiveTheme() {
-  const current = document.documentElement.dataset.theme || "midnight";
-  themeMenu.querySelectorAll("button").forEach((b) =>
-    b.classList.toggle("active", b.dataset.themeChoice === current)
-  );
-}
-markActiveTheme();
-
-themeBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  const open = themeMenu.classList.toggle("open");
-  themeBtn.setAttribute("aria-expanded", open);
+// ===================== Theme toggle (dark / light) =====================
+document.getElementById("theme-toggle").addEventListener("click", () => {
+  const next = document.documentElement.dataset.theme === "light" ? "midnight" : "light";
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem("theme", next);
+  refreshGraphColors();
 });
-document.addEventListener("click", () => {
-  themeMenu.classList.remove("open");
-  themeBtn.setAttribute("aria-expanded", "false");
-});
-
-themeMenu.querySelectorAll("button").forEach((btn) =>
-  btn.addEventListener("click", () => {
-    const theme = btn.dataset.themeChoice;
-    document.documentElement.dataset.theme = theme;
-    localStorage.setItem("theme", theme);
-    markActiveTheme();
-    refreshGraphColors();
-  })
-);
 
 // ===================== Knowledge-graph background =====================
 // A drifting graph of nodes and edges; hub nodes carry labels from

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="style.css" />
   <script>
     // Apply saved theme before first paint to avoid a flash
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "midnight";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "midnight";
   </script>
 </head>
 <body>
@@ -36,17 +36,10 @@
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <div class="theme-picker">
-          <button class="theme-btn" aria-label="Switch theme" aria-haspopup="true" aria-expanded="false">
-            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22a10 10 0 1 1 10-10c0 2-1.5 3-3 3h-2.5a2.5 2.5 0 0 0-2 4c.5.7 0 3-2.5 3Z"/><circle cx="7.5" cy="11.5" r="1" fill="currentColor"/><circle cx="11" cy="7.5" r="1" fill="currentColor"/><circle cx="16" cy="9" r="1" fill="currentColor"/></svg>
-          </button>
-          <div class="theme-menu" role="menu">
-            <button data-theme-choice="midnight" role="menuitem"><span class="swatch sw-midnight"></span>Midnight</button>
-            <button data-theme-choice="aurora" role="menuitem"><span class="swatch sw-aurora"></span>Aurora</button>
-            <button data-theme-choice="terminal" role="menuitem"><span class="swatch sw-terminal"></span>Terminal</button>
-            <button data-theme-choice="light" role="menuitem"><span class="swatch sw-light"></span>Daylight</button>
-          </div>
-        </div>
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>

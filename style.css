@@ -22,40 +22,6 @@
   --link-alpha: 0.16;
 }
 
-:root[data-theme="aurora"] {
-  --bg: #110b1e;
-  --bg-soft: #181030;
-  --card: #1c1336;
-  --card-border: #322352;
-  --text: #e6def5;
-  --text-dim: #a596c4;
-  --heading: #ffffff;
-  --accent: #c084fc;
-  --accent-2: #f472b6;
-  --gold: #fbbf24;
-  --nav-bg: rgba(17, 11, 30, 0.75);
-  --shadow: rgba(0, 0, 0, 0.45);
-  --particle: #c084fc;
-  --link-alpha: 0.16;
-}
-
-:root[data-theme="terminal"] {
-  --bg: #07120c;
-  --bg-soft: #0a1a11;
-  --card: #0d2016;
-  --card-border: #1c3a29;
-  --text: #d3ecd9;
-  --text-dim: #8bb398;
-  --heading: #f1fdf3;
-  --accent: #34d399;
-  --accent-2: #a3e635;
-  --gold: #facc15;
-  --nav-bg: rgba(7, 18, 12, 0.78);
-  --shadow: rgba(0, 0, 0, 0.45);
-  --particle: #34d399;
-  --link-alpha: 0.16;
-}
-
 :root[data-theme="light"] {
   --bg: #f6f8fc;
   --bg-soft: #edf1f8;
@@ -185,9 +151,7 @@ nav.scrolled { border-bottom-color: var(--card-border); }
   transition: transform 0.25s, opacity 0.25s;
 }
 
-/* ============ Theme picker ============ */
-.theme-picker { position: relative; }
-
+/* ============ Theme toggle ============ */
 .theme-btn {
   display: inline-flex;
   align-items: center;
@@ -202,52 +166,10 @@ nav.scrolled { border-bottom-color: var(--card-border); }
 }
 .theme-btn:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
 
-.theme-menu {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  min-width: 160px;
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 12px;
-  padding: 8px;
-  box-shadow: 0 16px 40px var(--shadow);
-  display: none;
-  flex-direction: column;
-  gap: 2px;
-}
-.theme-menu.open { display: flex; }
-
-.theme-menu button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 9px 12px;
-  border: none;
-  border-radius: 8px;
-  background: none;
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  text-align: left;
-  transition: background 0.15s;
-}
-.theme-menu button:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
-.theme-menu button.active { color: var(--accent); }
-
-.swatch {
-  width: 15px; height: 15px;
-  border-radius: 50%;
-  border: 1px solid rgba(128, 128, 128, 0.35);
-  flex-shrink: 0;
-}
-.sw-midnight { background: linear-gradient(135deg, #0a0e1a 50%, #60a5fa 50%); }
-.sw-aurora { background: linear-gradient(135deg, #110b1e 50%, #c084fc 50%); }
-.sw-terminal { background: linear-gradient(135deg, #07120c 50%, #34d399 50%); }
-.sw-light { background: linear-gradient(135deg, #f6f8fc 50%, #2563eb 50%); }
+/* Sun shown in dark mode (click for light), moon shown in light mode */
+.icon-moon { display: none; }
+:root[data-theme="light"] .icon-sun { display: none; }
+:root[data-theme="light"] .icon-moon { display: block; }
 
 /* ============ Hero ============ */
 .hero {
@@ -329,7 +251,6 @@ nav.scrolled { border-bottom-color: var(--card-border); }
   color: #fff;
   box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 30%, transparent);
 }
-:root[data-theme="terminal"] .btn-primary { color: #062012; }
 .btn-primary:hover { box-shadow: 0 12px 30px color-mix(in srgb, var(--accent) 45%, transparent); }
 
 .btn-ghost {

@@ -1,0 +1,145 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, top=0.5in, bottom=0.5in, left=0.6in, right=0.6in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{hidelinks}
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section heading format
+\titleformat{\section}{\vspace{-12pt}\large\bfseries\scshape}{}{0em}{}[\titlerule\vspace{-6pt}]
+
+% Job entry subheading
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #4} \\
+    \textit{\small #3} & \small #2 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\LARGE \textbf{Visakh Padmanabhan}} \\[4pt]
+  Ingolstadt, Germany \quad $\vert$ \quad +49 176 36926350 \quad $\vert$ \quad \href{mailto:visakhpadmanabhan7@gmail.com}{visakhpadmanabhan7@gmail.com} \\[2pt]
+  \href{https://www.linkedin.com/in/visakh-padmanabhan7/}{LinkedIn} \quad $\vert$ \quad \href{https://github.com/visakhpadmanabhan7}{GitHub} \quad $\vert$ \quad \href{https://medium.com/@visakhpadmanabhan7}{Medium} \quad $\vert$ \quad \href{https://visakhpadmanabhan7.github.io/}{Portfolio}
+\end{center}
+
+\vspace{2mm}
+
+%----------PROFILE SUMMARY----------
+\section{Profile Summary}
+\vspace{2pt}
+\small
+\textbf{AI \& Software Engineer} with three years of experience in Germany delivering \textbf{end-to-end Generative AI (GenAI) and ML applications} across cloud platforms. Skilled in \textbf{LLM-based agentic application development}, \textbf{Retrieval-Augmented Generation (RAG)} optimization, \textbf{tool calling}, and \textbf{context engineering} in production environments. Recipient of the \textbf{Best Outgoing Student Award} (M.S., Otto von Guericke University).
+
+\vspace{1mm}
+
+%----------PROFESSIONAL EXPERIENCE----------
+\section{Professional Experience}
+
+\resumeSubheading
+{AI \& Software Engineer}{}{MaindTec GmbH, Ingolstadt, Germany}{January 2026 -- Present}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.7mm]\small
+  \item Core developer on \textbf{MaiQ}, an AI-powered project management tool for engineers, building \textbf{end-to-end agentic features} from document processing to intelligent retrieval.
+  \item Built a \textbf{file processing service and vault management} using \textbf{Redis Streams} workers to handle PDF processing, chunking, and ingestion into \textbf{PostgreSQL} with \textbf{pgvector} for semantic retrieval.
+  \item Conducted \textbf{11+ chunking experiments} covering document selection, question-answer generation, and retrieval evaluation using \textbf{LLM-as-judge}, and productionized the best-performing strategy, \textbf{reducing inference costs by 37\%} with only a 2\% drop in retrieval performance.
+  \item Optimized \textbf{RAG} pipeline by implementing \textbf{hybrid search} combining \textbf{BM25} with embedding-based retrieval and \textbf{agentic retrieval} via \textbf{LLM tool calling} in \textbf{LangChain}, enabling page-wise and keyword-based retrieval that improved document relevance for end users.
+  \item Implemented advanced \textbf{context engineering} techniques including chat history pruning and tool call abstraction using \textbf{agentic middlewares} in \textbf{LangChain}, enabling efficient token optimization across long conversation sessions.
+\end{itemize}
+
+\vspace{1mm}
+
+\resumeSubheading
+{Junior Data Scientist}{}{Vay Technology, Berlin, Germany}{January 2025 -- August 2025}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.7mm]\small
+  \item Reduced \textbf{ETA error} by \textbf{25\%} through statistical evaluation of routing performance.
+  \item Engineered \textbf{dbt models} to monitor rebalancer missions, enabling early detection of operational issues and providing stakeholders with clear, reliable performance reports.
+  \item Automated deployments to \textbf{AWS S3/EC2} with GitHub Actions and \textbf{CI/CD}, enabling simulations to run on higher-memory instances and improving performance at scale.
+\end{itemize}
+
+\vspace{1mm}
+
+\resumeSubheading
+{Data Scientist, Working Student}{}{Einbliq.io, Munich, Germany}{May 2022 -- December 2024}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.7mm]\small
+  \item Developed \textbf{Machine Learning and predictive models} to forecast streaming device energy consumption, and built and \textbf{deployed} the Detailed Device Data Service using real-time \textbf{serverless Azure Functions}, achieving \textbf{99\% coverage} of streaming data.
+  \item Created and maintained \textbf{Grafana dashboards} to monitor streaming sessions and device capabilities, providing analysis of the Detailed Device Data Service.
+\end{itemize}
+
+\vspace{1mm}
+
+\resumeSubheading
+{Systems Engineer}{}{Infosys R\&D Ltd, Thiruvananthapuram, India}{October 2019 -- August 2021}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.7mm]\small
+  \item Processed and analyzed \textbf{unstructured text data} using \textbf{NLTK} and \textbf{spaCy}, applying tokenization, named entity recognition, and text preprocessing to transform raw documents into structured formats for downstream analysis.
+\end{itemize}
+
+\vspace{1mm}
+
+%----------TECHNICAL SKILLS----------
+\begin{samepage}
+\section{Technical Skills}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.5mm]\small
+  \item \textbf{Programming:} \textbf{Python} (OOP, NumPy, Pandas, Scikit-learn), \textbf{JavaScript}, \textbf{TypeScript}, \textbf{SQL}
+  \item \textbf{AI/ML \& LLM Frameworks:} \textbf{LangChain}, \textbf{LangGraph}, Hugging Face, Sentence-Transformers, \textbf{spaCy}, \textbf{NLTK}, PyTorch, \textbf{RAG optimization}, \textbf{tool calling}, \textbf{context engineering}, information retrieval evaluation metrics
+  \item \textbf{Software Development \& APIs:} \textbf{Next.js}, Microservices, \textbf{REST APIs}, \textbf{FastAPI}, Flask, Streamlit
+  \item \textbf{Databases \& Vector Stores:} \textbf{PostgreSQL}, \textbf{MongoDB}, \textbf{pgvector}, \textbf{Milvus}, Redis, dbt
+  \item \textbf{Cloud Platforms \& DevOps:} AWS, \textbf{Azure} (\textbf{Azure AI}), \textbf{Docker}, \textbf{GitHub Actions}, \textbf{CI/CD}, MLOps
+  \item \textbf{Tools \& Workflow:} Git, \textbf{JIRA}, \textbf{Agile/Scrum}, Claude Code, Codex
+  \item \textbf{Languages:} English (C1), German (A2)
+\end{itemize}
+\end{samepage}
+
+\newpage
+
+%----------EDUCATION----------
+\section{Education}
+
+\resumeSubheading
+{M.S.\ in Data and Knowledge Engineering}{\textbf{Grade: 1.4}}{Otto von Guericke University, Magdeburg, Germany}{October 2021 -- March 2025}
+
+\vspace{-2pt}
+
+\resumeSubheading
+{B.Tech in Computer Science and Engineering}{\textbf{Grade: 1.9}}{Mar Baselios College of Engineering and Technology, Thiruvananthapuram, India}{July 2015 -- August 2019}
+
+\vspace{-1mm}
+
+%----------PROJECTS AND PUBLICATIONS----------
+\section{Projects and Publications}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.7mm]\small
+  \item \textbf{Hybrid Legal Norm Retrieval} -- Leveraging Knowledge Graphs and Sentence-BERT for retrieving Civil Code Articles (COLIEE 2024 Task 3). \textit{Awarded Best Student Paper, JURIX 2024}. \href{https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations}{\textbf{[Link]}}
+  \begin{itemize}[leftmargin=2em, itemsep=0mm]
+    \item {\small Designed a hybrid retrieval pipeline combining \textbf{knowledge graph traversal} with \textbf{Sentence-BERT} embeddings to retrieve relevant legal norms from the Japanese Civil Code, achieving competitive results on the COLIEE 2024 benchmark.}
+  \end{itemize}
+
+  \item \textbf{LUMI: Legal Understanding and Matching through Interactive Highlighting} -- Improved legal text explainability by highlighting semantically aligned spans. \href{https://www.researchgate.net/publication/386466576_LUMI_Legal_Understanding_and_Matching_Through_Interactive_Highlighting}{\textbf{[Link]}}
+
+  \item \textbf{Expert Agent Guided Learning} -- Chatbot for guided learning using knowledge graphs built from OCR-extracted textbook content. \href{https://www.insticc.org/node/TechnicalProgram/data/2024/presentationDetails/128607}{\textbf{[Link]}}
+
+  \item \textbf{Slide Recommendation System} -- OCR-based keyword extraction and ranking system to enhance student learning from slides. \href{https://ieeexplore.ieee.org/document/10252423}{\textbf{[Link]}}
+
+  \item \textbf{MindMate} -- Conversational AI Agent using \textbf{LangGraph}, \textbf{LangChain}, and RAG to deliver empathetic, context-aware dialogue with personalized coping strategies. \href{https://github.com/visakhpadmanabhan7/MindMate}{\textbf{[Personal Project Link]}}
+\end{itemize}
+
+\vspace{-2mm}
+
+%----------ACHIEVEMENTS----------
+\section{Achievements}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0.7mm]\small
+  \item \textbf{Best Outgoing Student Award (M.S.)} -- Otto von Guericke University, Magdeburg
+  \item \textbf{Best Student Paper Award, JURIX 2024} -- Hybrid Legal Norm Retrieval: Leveraging \textbf{Knowledge Graphs} and \textbf{Sentence-BERT} for Retrieving Civil Code Articles (COLIEE 2024 Task 3)
+  \item \textbf{All Round Performance Award} -- Best Outgoing Student (2015--2019)
+\end{itemize}
+
+\end{document}

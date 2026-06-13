@@ -407,6 +407,11 @@ nav.scrolled { border-bottom-color: var(--card-border); }
 }
 .honor-card:hover { transform: translateY(-4px); border-color: var(--gold); }
 
+.honor-card-link { display: block; text-decoration: none; }
+.honor-card-link:hover { text-decoration: none; }
+.honor-card-link h3 { color: var(--gold); }
+.honor-card-link p { color: var(--text-dim); }
+
 .honor-icon { font-size: 1.7rem; margin-bottom: 10px; }
 
 .honor-card h3 {

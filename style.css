@@ -260,6 +260,14 @@ nav.scrolled { border-bottom-color: var(--card-border); }
 }
 .badge-gold { border-color: color-mix(in srgb, var(--gold) 45%, transparent); color: var(--gold); }
 
+.badge-link { transition: background 0.2s, border-color 0.2s, transform 0.15s; }
+.badge-link:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 12%, transparent);
+}
+
 .hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
 
 .btn {

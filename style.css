@@ -372,6 +372,12 @@ nav.scrolled { border-bottom-color: var(--card-border); }
 }
 .honors-cards .honor-card { flex: 1; }
 
+.honor-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .honor-photo {
   margin: 0;
   position: relative;
@@ -379,6 +385,7 @@ nav.scrolled { border-bottom-color: var(--card-border); }
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--gold) 32%, transparent);
   box-shadow: 0 20px 50px var(--shadow);
+  flex: 1;
 }
 
 .honor-photo img {

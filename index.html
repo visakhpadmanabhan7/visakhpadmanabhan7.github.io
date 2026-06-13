@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
   <script>
     // Apply saved theme before first paint to avoid a flash
     document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "midnight";
@@ -116,10 +116,16 @@
     <section id="honors" class="honors">
       <div class="container">
         <div class="honors-grid">
-          <figure class="honor-photo reveal">
-            <img src="assets/award_ceremony.jpg" alt="Visakh Padmanabhan receiving the Best Graduate (Bester Absolvent) award at Otto von Guericke University, Magdeburg" loading="lazy" />
-            <figcaption>Receiving the Bester Absolvent (Best Graduate) award · Otto von Guericke University, Magdeburg</figcaption>
-          </figure>
+          <div class="honor-photos">
+            <figure class="honor-photo reveal">
+              <img src="assets/award_ceremony.jpg" alt="Visakh Padmanabhan receiving the Best Graduate (Bester Absolvent) award at Otto von Guericke University, Magdeburg" loading="lazy" />
+              <figcaption>Bester Absolvent (Best Graduate) · Otto von Guericke University, Magdeburg</figcaption>
+            </figure>
+            <figure class="honor-photo reveal">
+              <img src="assets/award_bachelors.jpg" alt="Visakh Padmanabhan receiving the All Round Performance Award at Mar Baselios College of Engineering and Technology, India" loading="lazy" />
+              <figcaption>All Round Performance Award · Mar Baselios College of Engineering and Technology, India</figcaption>
+            </figure>
+          </div>
           <div class="honors-cards">
             <article class="honor-card reveal">
               <div class="honor-icon">🎓</div>

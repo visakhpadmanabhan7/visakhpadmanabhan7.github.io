@@ -781,6 +781,27 @@ section { padding: 96px 0; }
   margin-top: 10px;
 }
 
+.honors-strip {
+  list-style: none;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.honors-strip li {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  padding-left: 2px;
+}
+.honors-strip a { font-weight: 600; }
+
+.section-more {
+  margin-top: 22px;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+.section-more a { font-weight: 600; }
+
 /* ============ Contact ============ */
 #contact { padding-bottom: 110px; }
 .contact-lead {

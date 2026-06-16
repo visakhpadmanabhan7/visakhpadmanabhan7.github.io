@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=7" />
+  <link rel="stylesheet" href="style.css?v=8" />
   <script>
     // Apply saved theme before first paint to avoid a flash
     document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "midnight";
@@ -31,8 +31,8 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#research">Research</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
@@ -61,13 +61,13 @@
         reliable products.
       </p>
       <div class="hero-badges reveal">
-        <span class="badge badge-gold">🎓 Best Outgoing Student · M.S., Germany</span>
-        <span class="badge badge-gold">🏅 All Round Performance Award · B.Tech, India</span>
+        <span class="badge">📍 3 years shipping AI in German startups</span>
+        <span class="badge">⚡ 37% lower inference cost in production RAG</span>
+        <span class="badge">🇪🇺 EU Blue Card · full work authorization</span>
         <a class="badge badge-gold badge-link" href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">🏆 Best Student Paper · JURIX 2024 ↗</a>
-        <span class="badge">📍 3 years building AI in German startups</span>
       </div>
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#research">View my work</a>
+        <a class="btn btn-primary" href="#experience">View my work</a>
         <a class="btn btn-download" href="assets/visakh_padmanabhan_resume.pdf" download="Visakh_Padmanabhan_Resume.pdf">
           <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
           Download Résumé
@@ -116,41 +116,6 @@
 
   <main>
 
-    <!-- ============ HONORS ============ -->
-    <section id="honors" class="honors">
-      <div class="container">
-        <div class="honors-grid">
-          <div class="honor-photos">
-            <figure class="honor-photo reveal">
-              <img src="assets/award_ceremony.jpg" alt="Visakh Padmanabhan receiving the Best Graduate (Bester Absolvent) award at Otto von Guericke University, Magdeburg" loading="lazy" />
-              <figcaption>Bester Absolvent (Best Graduate) · Otto von Guericke University, Magdeburg</figcaption>
-            </figure>
-            <figure class="honor-photo reveal">
-              <img src="assets/award_bachelors.jpg" alt="Visakh Padmanabhan receiving the All Round Performance Award at Mar Baselios College of Engineering and Technology, India" loading="lazy" />
-              <figcaption>All Round Performance Award · Mar Baselios College of Engineering and Technology, India</figcaption>
-            </figure>
-          </div>
-          <div class="honors-cards">
-            <article class="honor-card reveal">
-              <div class="honor-icon">🎓</div>
-              <h3>Best Outgoing Student · M.S., Germany</h3>
-              <p>Otto von Guericke University, Magdeburg. M.S. in Data and Knowledge Engineering, Grade 1.4.</p>
-            </article>
-            <article class="honor-card reveal">
-              <div class="honor-icon">🏅</div>
-              <h3>All Round Performance Award · B.Tech, India</h3>
-              <p>Best Outgoing Student, B.Tech in Computer Science and Engineering (2015-2019).</p>
-            </article>
-            <a class="honor-card honor-card-link reveal" href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">
-              <div class="honor-icon">🏆</div>
-              <h3>Best Student Paper · JURIX 2024 ↗</h3>
-              <p>Hybrid legal norm retrieval combining knowledge graphs with fine-tuned Sentence-BERT.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ ABOUT ============ -->
     <section id="about">
       <div class="container">
@@ -158,22 +123,21 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I am an AI &amp; Software Engineer with three years of experience in Germany,
-              delivering <strong>end-to-end AI solutions</strong> across cloud platforms in fast-paced
-              startup environments. My focus is <strong>LLM-based agentic application development</strong>
-              and <strong>context engineering</strong>: RAG pipeline optimization, tool calling, agent
-              orchestration, and rigorous evaluation in production.
+              I am an AI &amp; Software Engineer with three years of experience in Germany
+              <strong>shipping end-to-end AI features to production</strong> in fast-paced startup
+              environments. My focus is <strong>LLM-based agentic application development</strong> and
+              <strong>context engineering</strong>: RAG pipeline optimization, hybrid search, tool
+              calling, agent orchestration, and rigorous evaluation that hold up under real usage.
             </p>
             <p>
-              Before industry, I earned an M.S. in <strong>Data and Knowledge Engineering</strong>
-              (Grade 1.4) at Otto von Guericke University, Magdeburg, where my thesis on
-              hybrid legal norm retrieval won the <strong>Best Student Paper Award at JURIX 2024</strong>.
-              I was named Best Outgoing Student at both my bachelor's and master's levels.
+              I care about the unglamorous parts that make AI systems actually work and move
+              business metrics: chunking strategies that cut cost, retrieval evaluation,
+              token budgets, and citation traceability. When the answer matters,
+              "the LLM said so" is not enough.
             </p>
             <p>
-              I care about the unglamorous parts that make AI systems actually work:
-              chunking strategies, retrieval evaluation, token budgets, and citation
-              traceability. When the answer matters, "the LLM said so" is not enough.
+              On the research side, my M.S. thesis in Data and Knowledge Engineering won the
+              <strong>Best Student Paper Award at JURIX 2024</strong> for hybrid legal norm retrieval.
             </p>
           </div>
           <div class="about-facts reveal">
@@ -189,20 +153,20 @@
               </div>
             </div>
             <div class="fact-card">
+              <span class="fact-value">37%</span>
+              <span class="fact-label">Inference cost cut in production RAG</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-value">99%</span>
+              <span class="fact-label">Streaming data coverage shipped at Einbliq</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-value">25%</span>
+              <span class="fact-label">ETA error reduction at Vay Technology</span>
+            </div>
+            <div class="fact-card">
               <span class="fact-value">3 yrs</span>
-              <span class="fact-label">AI engineering in German startups</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-value">4</span>
-              <span class="fact-label">Peer-reviewed publications</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-value">1.4</span>
-              <span class="fact-label">M.S. grade, Otto von Guericke University</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-value">2×</span>
-              <span class="fact-label">Best Outgoing Student awards</span>
+              <span class="fact-label">Shipping AI in German startups</span>
             </div>
           </div>
         </div>
@@ -293,54 +257,14 @@
       </div>
     </section>
 
-    <!-- ============ RESEARCH ============ -->
-    <section id="research">
-      <div class="container">
-        <h2 class="section-title reveal"><span class="section-num">03</span> Research &amp; Publications</h2>
-        <div class="pub-list">
-
-          <article class="pub-item pub-award reveal">
-            <div class="pub-badge">🏆 Best Student Paper · JURIX 2024</div>
-            <h3>Hybrid Legal Norm Retrieval: Leveraging Knowledge Graphs and Textual Representations</h3>
-            <p>
-              Master's thesis work. A hybrid retrieval pipeline combining <strong>knowledge graph
-              traversal</strong> with <strong>fine-tuned Sentence-BERT</strong> embeddings to retrieve relevant
-              legal norms from the Japanese Civil Code, achieving competitive results on the
-              COLIEE 2024 Task 3 benchmark.
-            </p>
-            <a href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">Read the paper →</a>
-          </article>
-
-          <article class="pub-item reveal">
-            <h3>LUMI: Legal Understanding and Matching Through Interactive Highlighting</h3>
-            <p>Improved legal text explainability by highlighting semantically aligned spans between queries and legal norms.</p>
-            <a href="https://www.researchgate.net/publication/386466576_LUMI_Legal_Understanding_and_Matching_Through_Interactive_Highlighting" target="_blank" rel="noopener">Read the paper →</a>
-          </article>
-
-          <article class="pub-item reveal">
-            <h3>Expert Agent Guided Learning</h3>
-            <p>A chatbot for guided learning built on knowledge graphs constructed from OCR-extracted textbook content.</p>
-            <a href="https://www.insticc.org/node/TechnicalProgram/data/2024/presentationDetails/128607" target="_blank" rel="noopener">View publication →</a>
-          </article>
-
-          <article class="pub-item reveal">
-            <h3>Slide Recommendation System</h3>
-            <p>OCR-based keyword extraction and ranking system to enhance student learning from lecture slides. Published at IEEE.</p>
-            <a href="https://ieeexplore.ieee.org/document/10252423" target="_blank" rel="noopener">View on IEEE Xplore →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
     <!-- ============ PROJECTS ============ -->
     <section id="projects">
       <div class="container">
-        <h2 class="section-title reveal"><span class="section-num">04</span> Projects</h2>
+        <h2 class="section-title reveal"><span class="section-num">03</span> Projects</h2>
 
         <article class="project-feature reveal">
           <div class="project-feature-body">
-            <p class="project-kicker">Flagship personal project</p>
+            <p class="project-kicker">Featured build</p>
             <h3>MindMate</h3>
             <p>
               An AI-powered mental health companion with journaling, mood tracking, therapy
@@ -397,24 +321,45 @@
             <div class="project-links"><a href="https://github.com/visakhpadmanabhan7/robot_simulation_webots" target="_blank" rel="noopener">GitHub →</a></div>
           </article>
 
-          <article class="project-card reveal">
-            <h3>Sports Analytics</h3>
-            <p class="project-meta">Side passion · Cricket</p>
-            <p>Cricket analytics notebooks and ML-based cricket scoreboard automation. Completed a sports analytics course with Mad About Sports and write about it on Medium.</p>
-            <div class="tags"><span>Pandas</span><span>Scikit-learn</span><span>Python</span></div>
-            <div class="project-links">
-              <a href="https://github.com/visakhpadmanabhan7/crick_analytics" target="_blank" rel="noopener">Cricket →</a>
-            </div>
+        </div>
+        <p class="section-more reveal">More on <a href="https://github.com/visakhpadmanabhan7?tab=repositories" target="_blank" rel="noopener">GitHub →</a></p>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">04</span> Research &amp; Publications</h2>
+        <div class="pub-list">
+
+          <article class="pub-item pub-award reveal">
+            <div class="pub-badge">🏆 Best Student Paper · JURIX 2024</div>
+            <h3>Hybrid Legal Norm Retrieval: Leveraging Knowledge Graphs and Textual Representations</h3>
+            <p>
+              Master's thesis work. A hybrid retrieval pipeline combining <strong>knowledge graph
+              traversal</strong> with <strong>fine-tuned Sentence-BERT</strong> embeddings to retrieve relevant
+              legal norms from the Japanese Civil Code, achieving competitive results on the
+              COLIEE 2024 Task 3 benchmark.
+            </p>
+            <a href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">Read the paper →</a>
           </article>
 
-          <article class="project-card reveal">
-            <h3>RAG &amp; Agent Playground</h3>
-            <p class="project-meta">Continuous learning in public</p>
-            <p>A set of hands-on repos exploring the LLM stack: RAG with Streamlit, agentic AI with locally hosted models via Ollama, MLOps with MLflow, Kubernetes deployments, and a structured AI engineering growth roadmap.</p>
-            <div class="tags"><span>Ollama</span><span>MLflow</span><span>Kubernetes</span><span>FastAPI</span></div>
-            <div class="project-links">
-              <a href="https://github.com/visakhpadmanabhan7?tab=repositories" target="_blank" rel="noopener">All repos →</a>
-            </div>
+          <article class="pub-item reveal">
+            <h3>LUMI: Legal Understanding and Matching Through Interactive Highlighting</h3>
+            <p>Improved legal text explainability by highlighting semantically aligned spans between queries and legal norms.</p>
+            <a href="https://www.researchgate.net/publication/386466576_LUMI_Legal_Understanding_and_Matching_Through_Interactive_Highlighting" target="_blank" rel="noopener">Read the paper →</a>
+          </article>
+
+          <article class="pub-item reveal">
+            <h3>Expert Agent Guided Learning</h3>
+            <p>A chatbot for guided learning built on knowledge graphs constructed from OCR-extracted textbook content.</p>
+            <a href="https://www.insticc.org/node/TechnicalProgram/data/2024/presentationDetails/128607" target="_blank" rel="noopener">View publication →</a>
+          </article>
+
+          <article class="pub-item reveal">
+            <h3>Slide Recommendation System</h3>
+            <p>OCR-based keyword extraction and ranking system to enhance student learning from lecture slides. Published at IEEE.</p>
+            <a href="https://ieeexplore.ieee.org/document/10252423" target="_blank" rel="noopener">View on IEEE Xplore →</a>
           </article>
 
         </div>
@@ -475,19 +420,24 @@
     <!-- ============ EDUCATION ============ -->
     <section id="education">
       <div class="container">
-        <h2 class="section-title reveal"><span class="section-num">06</span> Education</h2>
+        <h2 class="section-title reveal"><span class="section-num">06</span> Education &amp; Honors</h2>
         <div class="edu-grid">
           <article class="edu-card reveal">
             <h3>M.S. in Data and Knowledge Engineering</h3>
             <p class="edu-school">Otto von Guericke University, Magdeburg, Germany</p>
-            <p class="edu-meta">Oct 2021 – Mar 2025 · Grade 1.4 · Best Outgoing Student Award</p>
+            <p class="edu-meta">Oct 2021 – Mar 2025 · Grade 1.4</p>
           </article>
           <article class="edu-card reveal">
             <h3>B.Tech in Computer Science and Engineering</h3>
             <p class="edu-school">Mar Baselios College of Engineering and Technology, India</p>
-            <p class="edu-meta">Jul 2015 – Aug 2019 · Grade 1.9 · All Round Performance Award (Best Outgoing Student)</p>
+            <p class="edu-meta">Jul 2015 – Aug 2019 · Grade 1.9</p>
           </article>
         </div>
+        <ul class="honors-strip reveal">
+          <li>🎓 Best Outgoing Student, M.S. — Otto von Guericke University</li>
+          <li>🏅 All Round Performance Award (Best Outgoing Student), B.Tech — India</li>
+          <li>🏆 <a href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">Best Student Paper, JURIX 2024 ↗</a></li>
+        </ul>
       </div>
     </section>
 

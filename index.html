@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="style.css?v=11" />
   <script>
     // Apply saved theme before first paint to avoid a flash
     document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "midnight";
@@ -31,9 +31,9 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -61,10 +61,10 @@
         reliable products.
       </p>
       <div class="hero-badges reveal">
-        <span class="badge">📍 3 years shipping AI in German startups</span>
-        <span class="badge">⚡ 37% lower inference cost in production RAG</span>
-        <span class="badge">🇪🇺 EU Blue Card · full work authorization</span>
-        <a class="badge badge-gold badge-link" href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">🏆 Best Student Paper · JURIX 2024 ↗</a>
+        <span class="badge">3 years shipping AI in German startups</span>
+        <span class="badge">37% lower inference cost in production RAG</span>
+        <span class="badge">EU Blue Card · full work authorization</span>
+        <a class="badge badge-gold badge-link" href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">Best Student Paper · JURIX 2024 ↗</a>
       </div>
       <div class="hero-actions reveal">
         <a class="btn btn-primary" href="#experience">View my work</a>
@@ -144,12 +144,12 @@
             <div class="fact-card fact-wide hobbies">
               <span class="hobbies-title">Beyond work</span>
               <div class="tags hobby-tags">
-                <span>🏋️ Gym</span>
-                <span>⚽ Football</span>
-                <span>💻 Coding side projects</span>
-                <span>📚 Reading</span>
-                <span>🔬 Scientific research</span>
-                <span>📊 Sports analytics</span>
+                <span>Gym</span>
+                <span>Football</span>
+                <span>Coding side projects</span>
+                <span>Reading</span>
+                <span>Scientific research</span>
+                <span>Sports analytics</span>
               </div>
             </div>
             <div class="fact-card">
@@ -188,11 +188,11 @@
               </div>
               <p class="timeline-company">MaindTec GmbH · Ingolstadt, Germany</p>
               <ul>
-                <li>Core developer on <strong>MaiQ</strong>, an AI-powered project management tool for engineers, building end-to-end agentic features with <strong>agent orchestration</strong> from document processing to intelligent retrieval.</li>
-                <li>Built a <strong>Skill Store</strong>: users author and share modular agent capabilities at personal or organization scope, with <strong>conversational skill authoring</strong> so new skills are composed directly in chat from natural-language prompts and executed inline.</li>
-                <li>Ran <strong>11+ chunking experiments</strong> with LLM-as-judge retrieval evaluation and productionized the best strategy, <strong>cutting inference costs by 37%</strong> with only a 2% drop in retrieval performance.</li>
-                <li>Optimized the RAG pipeline with <strong>hybrid search</strong> (BM25 + embeddings) and <strong>agentic retrieval</strong> via LLM tool calling in LangChain, enabling page-wise and keyword-based retrieval.</li>
-                <li>Built file processing and vault management on <strong>Redis Streams</strong> workers feeding <strong>PostgreSQL + pgvector</strong>; added citation generation on streamed responses and context engineering middlewares for long sessions.</li>
+                <li>Shipped production <strong>Retrieval-Augmented Generation (RAG)</strong> features end to end on <strong>MaiQ</strong>, an AI project-management tool, from prototype to live product, spanning document processing, retrieval, and conversational interfaces.</li>
+                <li>Extended <strong>agent-building</strong> from engineers to end users by shipping the <strong>Skill Store</strong>, where anyone can author, share, and run <strong>their own agents</strong> directly in chat through <strong>conversational skill authoring</strong>.</li>
+                <li>Drove a <strong>37% cut in inference cost</strong> (2% retrieval drop) by designing an <strong>LLM-as-judge</strong> evaluation framework, running 11+ chunking experiments, and productionizing the winning strategy.</li>
+                <li>Re-architected the RAG pipeline as <strong>hybrid search</strong> (BM25 + embeddings) with <strong>agentic, tool-calling retrieval</strong> in LangChain, enabling page-wise and keyword-based retrieval that lifted document relevance for end users.</li>
+                <li>Powered <strong>semantic retrieval at scale</strong> with a file-ingestion pipeline: a <strong>CUDA</strong>-accelerated design and asynchronous <strong>Redis Streams</strong> workers parse and chunk very large files and many files in parallel into <strong>PostgreSQL + pgvector</strong>, with context-engineering middlewares that keep long sessions efficient.</li>
               </ul>
               <div class="tags">
                 <span>LangChain</span><span>RAG</span><span>pgvector</span><span>Redis Streams</span><span>LLM-as-judge</span><span>Hybrid Search</span>
@@ -229,9 +229,9 @@
               </div>
               <p class="timeline-company">Einbliq.io · Munich, Germany</p>
               <ul>
-                <li>Developed <strong>ML and predictive models</strong> to forecast streaming device energy consumption, enabling estimation of power emissions and carbon footprint.</li>
-                <li>Built and deployed the Detailed Device Data Service on <strong>serverless Azure Functions</strong>, achieving <strong>99% coverage</strong> of streaming data.</li>
-                <li>Created and maintained <strong>Grafana dashboards</strong> monitoring streaming sessions and device capabilities.</li>
+                <li><strong>Owned the Detailed Device Data Service end to end</strong>, building from scratch a real-time serverless <strong>Azure Functions</strong> pipeline that reached <strong>99% coverage</strong> of streaming device data.</li>
+                <li><strong>Estimated power emissions and carbon footprint</strong> from that device data using <strong>machine learning with confidence scores</strong>.</li>
+                <li>Built <strong>Grafana dashboards</strong> giving the team continuous visibility into streaming sessions and device capabilities.</li>
               </ul>
               <div class="tags">
                 <span>Machine Learning</span><span>Azure Functions</span><span>Grafana</span><span>Forecasting</span>
@@ -257,83 +257,14 @@
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title reveal"><span class="section-num">03</span> Projects</h2>
-
-        <article class="project-feature reveal">
-          <div class="project-feature-body">
-            <p class="project-kicker">Featured build</p>
-            <h3>MindMate</h3>
-            <p>
-              An AI-powered mental health companion with journaling, mood tracking, therapy
-              support, evidence-based advice via RAG, and crisis guardrails. Every message runs
-              through a <strong>LangGraph state machine</strong>: load history, detect intent, run a
-              non-negotiable <strong>crisis check</strong> (escalating to 988 and international hotlines
-              before anything else), then route to the right tool. Moods are passively detected
-              from conversation, journals are auto-analyzed for themes and sentiment, and advice
-              answers cite uploaded mental health literature page by page over <strong>SSE streaming</strong>.
-            </p>
-            <p>
-              Full-stack build: <strong>Next.js 16 + React 19</strong> frontend, <strong>FastAPI</strong> backend,
-              <strong>Groq (Llama 3.3 70B)</strong> with local BGE embeddings via fastembed, SQLite and
-              ChromaDB, GitHub Actions CI, and Docker Compose. Total running cost: <strong>$0</strong>.
-            </p>
-            <div class="tags">
-              <span>LangGraph</span><span>FastAPI</span><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Groq</span><span>ChromaDB</span><span>RAG</span>
-            </div>
-            <div class="project-links">
-              <a class="btn btn-small" href="https://github.com/visakhpadmanabhan7/MindMate" target="_blank" rel="noopener">View on GitHub →</a>
-            </div>
-          </div>
-          <div class="project-feature-visual" aria-hidden="true">
-            <div class="terminal">
-              <div class="terminal-bar"><span></span><span></span><span></span></div>
-              <pre><code><span class="t-dim">// LangGraph, every message</span>
-<span class="t-key">user</span> → <span class="t-fn">loadHistory()</span>
-     → <span class="t-fn">detectIntent()</span>
-  ├─ crisis?  → <span class="t-fn">hotlines()</span>
-  │             <span class="t-dim">first, always</span>
-  ├─ mood     → <span class="t-fn">trackMood()</span>
-  ├─ journal  → <span class="t-fn">analyzeEntry()</span>
-  ├─ therapy  → <span class="t-fn">sessionNotes()</span>
-  └─ advice   → <span class="t-fn">ragRetrieve()</span>
-      <span class="t-dim">cites pages from your PDFs</span></code></pre>
-            </div>
-          </div>
-        </article>
-
-        <div class="project-grid">
-
-          <article class="project-card reveal">
-            <h3>MaiQ Skill Store</h3>
-            <p class="project-meta">Professional work · MaindTec GmbH</p>
-            <p>A marketplace of modular agent capabilities inside MaiQ. Users compose new skills directly in chat from natural-language prompts and run them inline, lowering authorship from engineer-only to end-user.</p>
-            <div class="tags"><span>Agent Platforms</span><span>LangChain</span><span>Tool Calling</span></div>
-          </article>
-
-          <article class="project-card reveal">
-            <h3>Robot Arm Telemetry Pipeline</h3>
-            <p class="project-meta">Simulation · IoT · Real-time dashboards</p>
-            <p>Simulated a UR5 robotic arm in Webots, streamed joint and velocity data over MQTT into SQLite, and visualized it in a real-time Dash app with predictive modelling on top.</p>
-            <div class="tags"><span>Webots</span><span>MQTT</span><span>Dash</span><span>SQLite</span></div>
-            <div class="project-links"><a href="https://github.com/visakhpadmanabhan7/robot_simulation_webots" target="_blank" rel="noopener">GitHub →</a></div>
-          </article>
-
-        </div>
-        <p class="section-more reveal">More on <a href="https://github.com/visakhpadmanabhan7?tab=repositories" target="_blank" rel="noopener">GitHub →</a></p>
-      </div>
-    </section>
-
     <!-- ============ RESEARCH ============ -->
     <section id="research">
       <div class="container">
-        <h2 class="section-title reveal"><span class="section-num">04</span> Research &amp; Publications</h2>
+        <h2 class="section-title reveal"><span class="section-num">03</span> Research &amp; Publications</h2>
         <div class="pub-list">
 
           <article class="pub-item pub-award reveal">
-            <div class="pub-badge">🏆 Best Student Paper · JURIX 2024</div>
+            <div class="pub-badge">Best Student Paper · JURIX 2024</div>
             <h3>Hybrid Legal Norm Retrieval: Leveraging Knowledge Graphs and Textual Representations</h3>
             <p>
               Master's thesis work. A hybrid retrieval pipeline combining <strong>knowledge graph
@@ -369,7 +300,7 @@
     <!-- ============ SKILLS ============ -->
     <section id="skills">
       <div class="container">
-        <h2 class="section-title reveal"><span class="section-num">05</span> Technical Skills</h2>
+        <h2 class="section-title reveal"><span class="section-num">04</span> Technical Skills</h2>
         <div class="skills-grid">
           <div class="skill-group reveal">
             <h3>AI / LLM Engineering</h3>
@@ -410,10 +341,57 @@
           <div class="skill-group reveal">
             <h3>Spoken Languages</h3>
             <div class="tags tags-loose">
-              <span>🇬🇧 English · C1</span><span>🇩🇪 German · A2</span>
+              <span>English · C1</span><span>German · A2</span>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ PERSONAL PROJECTS ============ -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">05</span> Personal Projects</h2>
+
+        <article class="project-feature reveal">
+          <div class="project-feature-body">
+            <p class="project-kicker">Featured build</p>
+            <h3>MindMate</h3>
+            <p>
+              An AI-powered mental health companion with journaling, mood tracking, therapy
+              support, evidence-based advice via RAG, and crisis guardrails. Every message runs
+              through a <strong>LangGraph state machine</strong>: load history, detect intent, run a
+              non-negotiable <strong>crisis check</strong> (escalating to 988 and international hotlines
+              before anything else), then route to the right tool. Moods are passively detected
+              from conversation, journals are auto-analyzed for themes and sentiment, and advice
+              answers cite uploaded mental health literature page by page over <strong>SSE streaming</strong>.
+            </p>
+            <p>
+              Full-stack build: <strong>Next.js 16 + React 19</strong> frontend, <strong>FastAPI</strong> backend,
+              <strong>Groq (Llama 3.3 70B)</strong> with local BGE embeddings via fastembed, SQLite and
+              ChromaDB, GitHub Actions CI, and Docker Compose. Total running cost: <strong>$0</strong>.
+            </p>
+            <div class="tags">
+              <span>LangGraph</span><span>FastAPI</span><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Groq</span><span>ChromaDB</span><span>RAG</span>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-small" href="https://github.com/visakhpadmanabhan7/MindMate" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+
+          <article class="project-card reveal">
+            <h3>Chunk Lab</h3>
+            <p class="project-meta">Open source · RAG evaluation</p>
+            <p>An open-source toolkit for evaluating document-chunking strategies for RAG: it runs configurable chunking experiments and scores retrieval quality with an LLM-as-judge, surfacing the strategy that best balances retrieval accuracy and inference cost.</p>
+            <div class="tags"><span>RAG</span><span>LLM-as-judge</span><span>Chunking</span><span>Evaluation</span></div>
+            <div class="project-links"><a href="https://github.com/visakhpadmanabhan7?tab=repositories" target="_blank" rel="noopener">GitHub →</a></div>
+          </article>
+
+        </div>
+        <p class="section-more reveal">More on <a href="https://github.com/visakhpadmanabhan7?tab=repositories" target="_blank" rel="noopener">GitHub →</a></p>
       </div>
     </section>
 
@@ -434,9 +412,9 @@
           </article>
         </div>
         <ul class="honors-strip reveal">
-          <li>🎓 Best Outgoing Student, M.S. — Otto von Guericke University</li>
-          <li>🏅 All Round Performance Award (Best Outgoing Student), B.Tech — India</li>
-          <li>🏆 <a href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">Best Student Paper, JURIX 2024 ↗</a></li>
+          <li>Best Outgoing Student, M.S. — Otto von Guericke University</li>
+          <li>All Round Performance Award (Best Outgoing Student), B.Tech — India</li>
+          <li><a href="https://www.researchgate.net/publication/386467227_Hybrid_Legal_Norm_Retrieval_Leveraging_Knowledge_Graphs_and_Textual_Representations" target="_blank" rel="noopener">Best Student Paper, JURIX 2024 ↗</a></li>
         </ul>
       </div>
     </section>

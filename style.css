@@ -5,38 +5,38 @@
   --font-head: "Space Grotesk", var(--font-body);
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  /* Midnight (default) */
-  --bg: #0a0e1a;
-  --bg-soft: #0f1526;
-  --card: #131a2e;
-  --card-border: #1f2a45;
-  --text: #dbe2f1;
-  --text-dim: #8b96b3;
-  --heading: #ffffff;
-  --accent: #60a5fa;
-  --accent-2: #34d399;
-  --gold: #fbbf24;
-  --nav-bg: rgba(10, 14, 26, 0.75);
-  --shadow: rgba(0, 0, 0, 0.4);
-  --particle: #60a5fa;
-  --link-alpha: 0.16;
+  /* Graphite (default) — restrained, mature, one quiet accent */
+  --bg: #101216;
+  --bg-soft: #15181e;
+  --card: #181c23;
+  --card-border: #272c36;
+  --text: #c6ccd6;
+  --text-dim: #868d9b;
+  --heading: #eef0f4;
+  --accent: #7f99c2;
+  --accent-2: #7f99c2;
+  --gold: #c2a878;
+  --nav-bg: rgba(16, 18, 22, 0.80);
+  --shadow: rgba(0, 0, 0, 0.45);
+  --particle: #7f99c2;
+  --link-alpha: 0.09;
 }
 
 :root[data-theme="light"] {
-  --bg: #f6f8fc;
-  --bg-soft: #edf1f8;
+  --bg: #f3f4f6;
+  --bg-soft: #eaecf0;
   --card: #ffffff;
-  --card-border: #dce4f0;
-  --text: #2f3c52;
-  --text-dim: #5d6b84;
-  --heading: #0f172a;
-  --accent: #2563eb;
-  --accent-2: #059669;
-  --gold: #b45309;
-  --nav-bg: rgba(246, 248, 252, 0.8);
-  --shadow: rgba(15, 23, 42, 0.12);
-  --particle: #2563eb;
-  --link-alpha: 0.22;
+  --card-border: #dde1e8;
+  --text: #353b46;
+  --text-dim: #5e6573;
+  --heading: #1c222c;
+  --accent: #4f6485;
+  --accent-2: #4f6485;
+  --gold: #8a6d3b;
+  --nav-bg: rgba(243, 244, 246, 0.82);
+  --shadow: rgba(20, 25, 35, 0.10);
+  --particle: #4f6485;
+  --link-alpha: 0.14;
 }
 
 /* ============ Base ============ */
@@ -596,7 +596,7 @@ section { padding: 96px 0; }
 /* ============ Projects ============ */
 .project-feature {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   min-width: 0;
   background: linear-gradient(135deg, var(--card), var(--bg-soft));

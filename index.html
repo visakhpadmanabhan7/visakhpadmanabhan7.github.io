@@ -353,39 +353,20 @@
       <div class="container">
         <h2 class="section-title reveal"><span class="section-num">05</span> Personal Projects</h2>
 
-        <article class="project-feature reveal">
-          <div class="project-feature-body">
-            <p class="project-kicker">Featured build</p>
-            <h3>MindMate</h3>
-            <p>
-              An AI-powered mental health companion with journaling, mood tracking, therapy
-              support, evidence-based advice via RAG, and crisis guardrails. Every message runs
-              through a <strong>LangGraph state machine</strong>: load history, detect intent, run a
-              non-negotiable <strong>crisis check</strong> (escalating to 988 and international hotlines
-              before anything else), then route to the right tool. Moods are passively detected
-              from conversation, journals are auto-analyzed for themes and sentiment, and advice
-              answers cite uploaded mental health literature page by page over <strong>SSE streaming</strong>.
-            </p>
-            <p>
-              Full-stack build: <strong>Next.js 16 + React 19</strong> frontend, <strong>FastAPI</strong> backend,
-              <strong>Groq (Llama 3.3 70B)</strong> with local BGE embeddings via fastembed, SQLite and
-              ChromaDB, GitHub Actions CI, and Docker Compose. Total running cost: <strong>$0</strong>.
-            </p>
-            <div class="tags">
-              <span>LangGraph</span><span>FastAPI</span><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Groq</span><span>ChromaDB</span><span>RAG</span>
-            </div>
-            <div class="project-links">
-              <a class="btn btn-small" href="https://github.com/visakhpadmanabhan7/MindMate" target="_blank" rel="noopener">View on GitHub →</a>
-            </div>
-          </div>
-        </article>
-
         <div class="project-grid">
 
           <article class="project-card reveal">
+            <h3>MindMate</h3>
+            <p class="project-meta">Agentic AI · LangGraph</p>
+            <p>An AI mental-health companion where every message runs through a <strong>LangGraph state machine</strong>: load history, detect intent, run a non-negotiable <strong>crisis check</strong>, then route to the right tool. Advice answers cite uploaded literature page by page over <strong>SSE streaming</strong>. Full-stack on Next.js 16 + FastAPI + Groq, running at $0.</p>
+            <div class="tags"><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>Next.js 16</span><span>Groq</span></div>
+            <div class="project-links"><a href="https://github.com/visakhpadmanabhan7/MindMate" target="_blank" rel="noopener">View on GitHub →</a></div>
+          </article>
+
+          <article class="project-card reveal">
             <h3>Chunk Lab</h3>
-            <p class="project-meta">Open source · RAG evaluation</p>
-            <p>An open-source toolkit for evaluating document-chunking strategies for RAG: it runs configurable chunking experiments and scores retrieval quality with an LLM-as-judge, surfacing the strategy that best balances retrieval accuracy and inference cost.</p>
+            <p class="project-meta">RAG evaluation · LLM-as-judge</p>
+            <p>A toolkit for evaluating document-chunking strategies for RAG: it runs configurable chunking experiments and scores retrieval quality with an <strong>LLM-as-judge</strong>, surfacing the strategy that best balances retrieval accuracy and inference cost.</p>
             <div class="tags"><span>RAG</span><span>LLM-as-judge</span><span>Chunking</span><span>Evaluation</span></div>
             <div class="project-links"><a href="https://github.com/visakhpadmanabhan7?tab=repositories" target="_blank" rel="noopener">GitHub →</a></div>
           </article>
